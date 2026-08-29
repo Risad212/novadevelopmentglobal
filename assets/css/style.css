@@ -442,17 +442,15 @@ address {
 }
 
 .topbar {
-    background-color: var(--navy);
-
+    background-color: #243152;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
-
     font-size: 11px;
 }
 
 .small-tracking {
     letter-spacing: .02em;
     color: #fff;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .market-btn {
@@ -549,10 +547,10 @@ address {
 .btn-outline-gold {
     border: 1px solid var(--gold);
     background-color: transparent;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     letter-spacing: .05em;
-    padding: 0.45rem 1.5rem;
+    padding: 0.35rem 1.5rem;
     border-radius: 0;
     transition: all .2s;
     line-height: 1.5em;
@@ -638,7 +636,7 @@ address {
     position: relative;
     background-color: var(--navy);
     overflow: hidden;
-    min-height: 87vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1131,8 +1129,7 @@ address {
 ========================================================= */
 
 .nova-global-section {
-    background: var(--sand-dark);
-
+    background: #eeeae1;
     color: #0F131F;
 }
 
@@ -1158,44 +1155,35 @@ address {
 
 .nova-location-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
-    border-top: 1px solid var(--border-c);
-
-    border-left: 1px solid var(--border-c);
+    gap: 21px;
 }
 
 .nova-location-card {
     position: relative;
-
     min-height: 350px;
-
     padding: 30px;
-
     border-right: 1px solid var(--border-c);
-
     border-bottom: 1px solid var(--border-c);
-
     color: #0F131F;
-
     text-decoration: none;
-
     transition: .45s ease;
+    background: #ffffff;
 }
 
 .nova-location-card:hover {
     background: var(--navy);
-
     color: #ffffff;
-
     transform: translateY(-8px);
 }
 
-.nova-location-number {
-    color: var(--gold);
+.nova-location-card:hover .nova-location-number{
+    color: #fff;
+}
 
-    font-size: 11px;
+.nova-location-number {
+    color: #000000;
+    font-size: 15px;
 }
 
 .nova-location-flag {
@@ -1251,34 +1239,35 @@ address {
 
 .nova-location-arrow {
     position: absolute;
-
     right: 30px;
     bottom: 30px;
-
-    color: var(--gold);
-
+    color: #000000;
     font-size: 22px;
-
     transition: .3s ease;
 }
 
 .nova-location-card:hover .nova-location-arrow {
     transform: translate(5px, -5px);
+    color: #fff;
 }
 
 .nova-global-footer {
     display: flex;
-
     justify-content: space-between;
-
     padding-top: 25px;
-
     color: var(--muted-body);
-
-    font-size: 10px;
-
+    font-size: 12px;
     letter-spacing: .15em;
 }
+
+.nova-location-card:hover .nova-location-content p{
+    color: #fff;
+}
+
+.nova-location-grid .active-location{
+    background: var(--navy);
+}
+
 
 
 /* =========================================================
