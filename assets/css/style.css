@@ -2615,128 +2615,266 @@ address {
 
 
 /* =========================================================
-   BRAND STORY
+   BRAND STORY — MODERN (story.png layout + Nova branding)
+   Layout from story.png, colors from Nova system
+   Text sizes synced with other sections (+1-2px)
 ========================================================= */
 
-.nova-story-section {
+.nova-story-modern {
     background: var(--sand);
-
-    color: #0F131F;
-}
-
-.nova-story-header {
-    display: grid;
-
-    grid-template-columns: 1fr 1.4fr;
-
-    gap: 50px;
-
-    padding-bottom: 80px;
-}
-
-.nova-story-header h2 {
-    max-width: 800px;
-
-    margin: 0;
-
-    color: #0F131F;
-
-    font-size: clamp(45px, 5vw, 75px);
-
-    line-height: .98;
-
-    letter-spacing: -.055em;
-}
-
-.nova-story-header h2 span {
-    color: var(--gold);
-}
-
-.nova-story-timeline {
+    padding: 90px 0 70px;
     position: relative;
-
-    max-width: 1000px;
-
-    margin-left: auto;
+    overflow: hidden;
 }
 
-.nova-story-timeline::before {
-    content: "";
-
+.nova-story-modern::before {
+    content: "N";
     position: absolute;
-
-    top: 0;
-    bottom: 0;
-
-    left: 180px;
-
-    width: 1px;
-
-    background: var(--border-c);
+    right: -20px;
+    bottom: -120px;
+    font-size: 450px;
+    line-height: 1;
+    font-weight: 800;
+    color: rgba(15,19,31,.025);
+    pointer-events: none;
 }
 
-.nova-story-item {
+.nova-story-modern .nova-section-label {
+    margin-bottom: 14px;
+}
+
+.nova-story-modern-heading {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 52px;
     position: relative;
-
-    display: grid;
-
-    grid-template-columns: 150px 60px 1fr;
-
-    min-height: 230px;
+    z-index: 1;
 }
 
-.nova-story-year {
-    padding-top: 4px;
-
-    color: var(--gold);
-
-    font-size: 15px;
-
+.nova-story-modern-heading h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(34px, 4vw, 46px);
     font-weight: 700;
+    line-height: .98;
+    letter-spacing: -.055em;
+    color: var(--nova-heading);
 }
 
-.nova-story-marker {
-    position: relative;
+.nova-story-modern-heading h2 span {
+    color: var(--gold);
 }
 
-.nova-story-marker span {
-    position: absolute;
-
-    top: 7px;
-    left: 0;
-
-    width: 12px;
-    height: 12px;
-
-    border: 2px solid var(--gold);
-
-    background: var(--sand);
-
-    border-radius: 50%;
-}
-
-.nova-story-content {
-    padding-bottom: 60px;
-}
-
-.nova-story-content h3 {
-    margin: 10px 0 15px;
-
-    color: #0F131F;
-
-    font-size: 30px;
-
-    letter-spacing: -.025em;
-}
-
-.nova-story-content p {
-    max-width: 560px;
-
-    margin: 0;
-
-    color: var(--muted-body);
-
+.nova-story-modern-heading p {
+    margin: 16px auto 0;
+    max-width: 640px;
+    font-size: 15px;
     line-height: 1.8;
+    color: var(--muted-body);
+}
+
+.nova-timeline-modern {
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.nova-timeline-row {
+    display: grid;
+    grid-template-columns: 150px 36px 1fr;
+    align-items: start;
+    gap: 0;
+    padding-bottom: 28px;
+}
+
+.nova-timeline-meta {
+    text-align: right;
+    padding-right: 18px;
+    padding-top: 22px;
+}
+
+.nova-timeline-meta .tm-year {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--gold);
+    letter-spacing: .02em;
+    line-height: 1;
+}
+
+.nova-timeline-meta .tm-date {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--muted-body);
+    letter-spacing: .02em;
+    opacity: .85;
+}
+
+.nova-timeline-meta .tm-date sup {
+    font-size: 8px;
+    vertical-align: super;
+    margin-left: 1px;
+}
+
+.nova-timeline-line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100%;
+}
+
+.nova-timeline-line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: -28px;
+    left: 50%;
+    width: 1px;
+    background: var(--border-c);
+    transform: translateX(-50%);
+}
+
+.nova-timeline-row:last-child .nova-timeline-line::before {
+    bottom: 0;
+}
+
+.tm-dot {
+    width: 10px;
+    height: 10px;
+    background: var(--card);
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    margin-top: 24px;
+    flex: 0 0 10px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 0 4px var(--sand);
+}
+
+.nova-timeline-card {
+    background: var(--card);
+    border: 1px solid var(--border-c);
+    border-radius: 14px;
+    padding: 26px 26px 26px 28px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+.nova-timeline-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--gold);
+    opacity: 0;
+    transition: opacity .22s ease;
+}
+
+.nova-timeline-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(35,100,108,.18);
+    box-shadow: 0 10px 28px rgba(15,19,31,.07);
+}
+
+.nova-timeline-card:hover::before {
+    opacity: 1;
+}
+
+.tm-card-body {
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    gap: 28px;
+    align-items: center;
+}
+
+.tm-card-text .tm-eyebrow {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+
+.tm-card-text h3 {
+    margin: 0 0 12px;
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02em;
+    color: var(--nova-heading);
+}
+
+.tm-card-text p {
+    margin: 0 0 10px;
+    font-size: 14px;
+    line-height: 1.78;
+    color: var(--muted-body);
+}
+
+.tm-card-text p:last-child {
+    margin-bottom: 0;
+}
+
+.tm-card-img {
+    width: 100%;
+    height: 176px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: var(--sand-dark);
+    border: 1px solid var(--border-c);
+}
+
+.tm-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s ease;
+}
+
+.nova-timeline-card:hover .tm-card-img img {
+    transform: scale(1.04);
+}
+
+@media (max-width: 991px) {
+    .nova-story-modern { padding: 70px 0 50px; }
+    .tm-card-body { grid-template-columns: 1fr 190px; gap: 20px; }
+    .nova-timeline-row { grid-template-columns: 120px 30px 1fr; }
+}
+
+@media (max-width: 767px) {
+    .nova-story-modern-heading { margin-bottom: 36px; padding: 0 8px; }
+    .nova-timeline-row {
+        grid-template-columns: 76px 20px 1fr;
+        padding-bottom: 18px;
+    }
+    .nova-timeline-meta { padding-right: 10px; padding-top: 16px; }
+    .nova-timeline-meta .tm-year { font-size: 14px; }
+    .nova-timeline-meta .tm-date { font-size: 12px; }
+    .nova-timeline-line::before { bottom: -18px; }
+    .tm-dot { width: 9px; height: 9px; margin-top: 20px; }
+    .nova-timeline-card { padding: 18px 16px; margin-left: 6px; border-radius: 12px; }
+    .tm-card-body { grid-template-columns: 1fr; gap: 16px; }
+    .tm-card-img { height: 200px; order: -1; border-radius: 8px; }
+    .tm-card-text h3 { font-size: 20px; }
+    .tm-card-text p { font-size: 14px; }
+}
+
+@media (max-width: 575px) {
+    .nova-timeline-card { border-radius: 12px; }
+    .tm-card-img { height: 180px; }
 }
 
 
