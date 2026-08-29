@@ -655,7 +655,6 @@
   </section>
 
 
-
   <!-- =========================================================
        VISION & MISSION
   ========================================================== -->
@@ -692,135 +691,90 @@
       </div>
 
 
-      <!-- VISION / MISSION -->
-      <div class="row g-0 nova-vision-grid">
-
-
-        <!-- VISION -->
-        <div class="col-lg-6">
-
-          <div class="nova-vision-panel nova-vision-panel-dark">
-
-            <span class="nova-panel-number">
-              01
-            </span>
-
-            <span class="eyebrow text-gold">
-              Our Vision
-            </span>
-
-            <h3>
-              Build the places people believe in.
-            </h3>
-
-            <p>
-
-              We envision a future where development
-              is measured not only by financial performance,
-              but by the lasting value it creates for people,
-              cities and communities.
-
-            </p>
-
-          </div>
-
+      <!-- VISION / MISSION — Tabs with image (handles more text) -->
+      <div class="nova-vm-tabs">
+        <div class="nova-vm-tab-nav" role="tablist" aria-label="Vision and Mission">
+          <button role="tab" aria-selected="true" aria-controls="panel-vision" id="tab-vision" data-tab="vision" class="nova-vm-tab active">
+            <span class="tab-num">01</span> Our Vision
+          </button>
+          <button role="tab" aria-selected="false" aria-controls="panel-mission" id="tab-mission" data-tab="mission" class="nova-vm-tab">
+            <span class="tab-num">02</span> Our Mission
+          </button>
         </div>
 
-
-        <!-- MISSION -->
-        <div class="col-lg-6">
-
-          <div class="nova-vision-panel nova-vision-panel-gold">
-
-            <span class="nova-panel-number">
-              02
-            </span>
-
-            <span class="eyebrow">
-              Our Mission
-            </span>
-
-            <h3>
-              Turn opportunity into enduring value.
-            </h3>
-
-            <p>
-
-              We acquire intelligently, design responsibly
-              and deliver with discipline — bringing together
-              land, capital, people and expertise to create
-              meaningful destinations.
-
-            </p>
-
+        <div class="nova-vm-panels">
+          <!-- Vision Panel — left image, right content -->
+          <div id="panel-vision" role="tabpanel" aria-labelledby="tab-vision" class="nova-vm-panel active">
+            <div class="nova-vm-image">
+              <img src="assets/img/mission.webp" alt="Vision — places people believe in">
+              <span class="img-caption">Vision · Legacy over short-term</span>
+            </div>
+            <div class="nova-vm-text">
+              <span class="nova-panel-number">01</span>
+              <span class="eyebrow text-gold">Our Vision</span>
+              <h3>Build the places people believe in.</h3>
+              <p>We envision a future where development is measured not only by financial performance, but by the lasting value it creates for people</p>
+              <p>Our vision extends to creating resilient neighborhoods, sustainable infrastructure and places that foster belonging — investments that compound in social, environmental and economic value over decades. Add more text here as needed; the layout expands gracefully with scroll.</p>
+              <p>Every master plan, every acre and every partnership is guided by long-term thinking, ensuring what we build today remains relevant and cherished tomorrow.</p>
+            </div>
           </div>
 
+          <!-- Mission Panel — left image, right content -->
+          <div id="panel-mission" role="tabpanel" aria-labelledby="tab-mission" class="nova-vm-panel">
+            <div class="nova-vm-image">
+              <img src="assets/img/vission.webp" alt="Mission — enduring value">
+              <span class="img-caption">Mission · Discipline to delivery</span>
+            </div>
+            <div class="nova-vm-text">
+              <span class="nova-panel-number">02</span>
+              <span class="eyebrow text-gold">Our Mission</span>
+              <h3>Turn opportunity into enduring value.</h3>
+              <p>We acquire intelligently, design responsibly and deliver with discipline — bringing together land, capital, people and expertise to create meaningful destinations.</p>
+              <p>Our mission is operationalized through rigorous diligence, transparent governance and design excellence — from land assembly and entitlements to engineering, construction and long-term stewardship. More text can be added here without breaking the layout.</p>
+              <p>By aligning capital with community needs, we de-risk growth for investors while delivering places that perform for owners and delight for residents.</p>
+            </div>
+          </div>
         </div>
-
       </div>
 
 
-      <!-- PRINCIPLES -->
+      <!-- PRINCIPLES — redesigned -->
       <div class="nova-principles">
 
-
-        <div>
-
-          <span>01</span>
-
-          <strong>
-            Integrity
-          </strong>
-
-          <p>
-            Do the right thing at every stage.
-          </p>
-
+        <div class="principle-card">
+          <div class="principle-head">
+            <span class="num">01</span>
+            <span class="icon"><i class="fa-solid fa-shield-halved"></i></span>
+          </div>
+          <strong>Integrity</strong>
+          <p>Do the right thing at every stage.</p>
         </div>
 
-
-        <div>
-
-          <span>02</span>
-
-          <strong>
-            Excellence
-          </strong>
-
-          <p>
-            Set a higher standard for delivery.
-          </p>
-
+        <div class="principle-card">
+          <div class="principle-head">
+            <span class="num">02</span>
+            <span class="icon"><i class="fa-solid fa-award"></i></span>
+          </div>
+          <strong>Excellence</strong>
+          <p>Set a higher standard for delivery.</p>
         </div>
 
-
-        <div>
-
-          <span>03</span>
-
-          <strong>
-            Stewardship
-          </strong>
-
-          <p>
-            Think beyond today's development.
-          </p>
-
+        <div class="principle-card">
+          <div class="principle-head">
+            <span class="num">03</span>
+            <span class="icon"><i class="fa-solid fa-leaf"></i></span>
+          </div>
+          <strong>Stewardship</strong>
+          <p>Think beyond today's development.</p>
         </div>
 
-
-        <div>
-
-          <span>04</span>
-
-          <strong>
-            Partnership
-          </strong>
-
-          <p>
-            Build lasting relationships.
-          </p>
-
+        <div class="principle-card">
+          <div class="principle-head">
+            <span class="num">04</span>
+            <span class="icon"><i class="fa-solid fa-handshake"></i></span>
+          </div>
+          <strong>Partnership</strong>
+          <p>Build lasting relationships.</p>
         </div>
 
       </div>
@@ -828,7 +782,6 @@
     </div>
 
   </section>
-
 
 
   <!-- =========================================================
@@ -1024,203 +977,108 @@
 
 
 
-  <!-- =========================================================
-       INVESTORS
+ <!-- =========================================================
+       INVESTORS — MODERN BUSINESS DEALING
   ========================================================== -->
 
-  <section id="investors" class="nova-investor-section">
+  <section id="investors" class="nova-investor-section nova-investor-modern">
 
     <div class="container">
 
+      <div class="nova-investor-modern-grid">
 
-      <div class="nova-investor-top">
+        <!-- LEFT: BUSINESS DEALING VISUAL -->
+        <div class="nova-investor-visual">
+          <div class="investor-img-card">
+            <img src="assets/img/investor.jpeg"
+              alt="Business handshake — investor partnership" loading="lazy">
+            <div class="investor-img-overlay"></div>
 
-        <div>
+            <!-- Top badge -->
+            <div class="investor-deal-badge">
+              <span class="dot"></span> Deal-ready governance · Audited &amp; Transparent
+            </div>
 
-          <div class="nova-section-label nova-section-label-light">
+            <!-- Floating card — distinct from metrics grid (no $1.2B duplication) -->
+            <div class="investor-floating-card">
+              <small class="eyebrow text-gold">Proven exits</small>
+              <div class="gdv">32<span>+</span> <em>Exits</em></div>
+              <p>Successful, on-time exits across market cycles — phased capital discipline.</p>
+              <div class="mini-stats">
+                <span><strong>Escrow</strong> Protected</span>
+                <span><strong>On-Time</strong> Delivery</span>
+              </div>
+            </div>
+          </div>
 
-            <span>
-              Investors
-            </span>
+          <!-- Trust bar below image -->
+          <div class="investor-trust-bar">
+            <span><i class="fa-solid fa-building-columns"></i> Institutional &amp; private capital</span>
+            <span class="sep">•</span>
+            <span><i class="fa-solid fa-shield-halved"></i> Governance first</span>
+            <span class="sep">•</span>
+            <span><i class="fa-solid fa-earth-asia"></i> 4 markets</span>
+          </div>
+        </div>
 
+        <!-- RIGHT: CONTENT -->
+        <div class="nova-investor-copy">
+          <div class="nova-section-label nova-section-label-light" style="margin-bottom:18px;">
+            <span>Investors</span>
           </div>
 
           <h2>
-
             Capital with a
-            <span>
-              long-term view.
-            </span>
-
+            <span>long-term view.</span>
           </h2>
 
-        </div>
-
-
-        <p>
-
-          Nova combines disciplined capital allocation,
-          market intelligence and development expertise
-          to create resilient long-term value.
-
-        </p>
-
-      </div>
-
-
-      <!-- DASHBOARD -->
-      <div class="nova-investor-dashboard">
-
-
-        <div class="nova-investor-main">
-
-          <span class="eyebrow text-gold">
-            GROUP OVERVIEW
-          </span>
-
-          <div class="nova-investor-value">
-
-            $
-            <strong>
-              1.2B
-            </strong>
-
-          </div>
-
-          <p>
-
-            Indicative gross development value across
-            the active portfolio.
-
+          <p class="investor-lead">
+            Nova combines disciplined capital allocation, market intelligence and development expertise
+            to create resilient long-term value — built for investors who measure returns in decades, not quarters.
           </p>
 
-          <a href="#" class="nova-gold-button">
-
-            Investor information ↗
-
-          </a>
-
-        </div>
-
-
-        <!-- STATS -->
-        <div class="nova-investor-stats">
-
-
-          <div>
-
-            <span>01</span>
-
-            <strong>
-              45+
-            </strong>
-
-            <p>
-              Projects
-            </p>
-
+          <!-- Metrics — investor focused (no duplication of company profile) -->
+          <div class="investor-metrics">
+            <div class="inv-metric">
+              <span class="num">01 — Portfolio</span>
+              <strong><sup>$</sup>1.2B</strong>
+              <p>Gross development value</p>
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <div class="inv-metric">
+              <span class="num">02 — Returns</span>
+              <strong>18%</strong>
+              <p>Target net IRR — risk-adjusted</p>
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+            <div class="inv-metric">
+              <span class="num">03 — Partners</span>
+              <strong>120+</strong>
+              <p>Institutional &amp; private partners</p>
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <div class="inv-metric">
+              <span class="num">04 — Governance</span>
+              <strong>100%</strong>
+              <p>Audited &amp; board-governed</p>
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
           </div>
 
-
-          <div>
-
-            <span>02</span>
-
-            <strong>
-              3,200
-            </strong>
-
-            <p>
-              Acres
-            </p>
-
+          <!-- Why investors choose Nova -->
+          <div class="investor-why">
+            <span><i class="fa-solid fa-check"></i> Risk-adjusted structuring</span>
+            <span><i class="fa-solid fa-check"></i> Design &amp; engineering discipline</span>
+            <span><i class="fa-solid fa-check"></i> Long-term stewardship</span>
           </div>
 
-
-          <div>
-
-            <span>03</span>
-
-            <strong>
-              04
-            </strong>
-
-            <p>
-              Markets
-            </p>
-
-          </div>
-
-
-          <div>
-
-            <span>04</span>
-
-            <strong>
-              17
-            </strong>
-
-            <p>
-              Years
-            </p>
-
+          <!-- Primary CTAs -->
+          <div class="investor-actions">
+            <a href="#" class="btn btn-gold text-uppercase">Investor information <span>↗</span></a>
+            <a href="#" class="investor-secondary-link">Download investment deck <span>↗</span></a>
           </div>
 
         </div>
-
-      </div>
-
-
-      <!-- INVESTOR LINKS -->
-      <div class="nova-investor-links">
-
-        <a href="#">
-
-          <span>
-            Annual Reports
-          </span>
-
-          <strong>
-            PDF ↗
-          </strong>
-
-        </a>
-
-        <a href="#">
-
-          <span>
-            Corporate Governance
-          </span>
-
-          <strong>
-            View ↗
-          </strong>
-
-        </a>
-
-        <a href="#">
-
-          <span>
-            Investor Relations
-          </span>
-
-          <strong>
-            Contact ↗
-          </strong>
-
-        </a>
-
-        <a href="#">
-
-          <span>
-            Financial Information
-          </span>
-
-          <strong>
-            View ↗
-          </strong>
-
-        </a>
 
       </div>
 

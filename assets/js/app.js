@@ -78,6 +78,31 @@ document.querySelectorAll('.dropdown').forEach(function (el) {
   });
 });
 
+
+
+/* =============================================
+      Mission vission
+  ====================================== */
+document.addEventListener('DOMContentLoaded', function () {
+  var tabs = document.querySelectorAll('.nova-vm-tab');
+  var panels = document.querySelectorAll('.nova-vm-panel');
+  if (!tabs.length) return;
+  tabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      var target = tab.getAttribute('data-tab');
+      tabs.forEach(function (t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      panels.forEach(function (p) { p.classList.remove('active'); });
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      var panel = document.getElementById('panel-' + target);
+      if (panel) panel.classList.add('active');
+    });
+  });
+});
+
 /* =============================================
       Chat and social media
   ====================================== */
