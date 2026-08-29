@@ -1268,7 +1268,12 @@ address {
     background: var(--navy);
 }
 
-
+.nova-location-grid .active-location .nova-location-number,
+.nova-location-grid .active-location .nova-location-content h3,
+.nova-location-grid .active-location .nova-location-content p,
+.nova-location-grid .active-location .nova-location-arrow {
+    color: #fff;
+}
 
 /* =========================================================
    VISION & MISSION
