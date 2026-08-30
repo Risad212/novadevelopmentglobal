@@ -59,7 +59,9 @@
 /* =========================================================
    GLOBAL RESET
 ========================================================= */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -76,7 +78,14 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3, h4, h5, h6, .brand-name, .font-display {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand-name,
+.font-display {
     font-family: var(--font-display);
     color: var(--fg);
     letter-spacing: -0.02em;
@@ -84,6 +93,8 @@ h1, h2, h3, h4, h5, h6, .brand-name, .font-display {
 
 .navbar-toggler {
     padding: 0 !important;
+    color: transparent;
+    outline: none;
 }
 
 .navbar-toggler i {
@@ -211,7 +222,15 @@ address {
 /* =========================================================
    COMMON SECTIONS
 ========================================================= */
-.nova-profile-section, .nova-global-section, .nova-vision-section, .nova-portfolio-section, .nova-news-section, .nova-story-section, .nova-csr-section, .nova-contact-section, .nova-investor-section {
+.nova-profile-section,
+.nova-global-section,
+.nova-vision-section,
+.nova-portfolio-section,
+.nova-news-section,
+.nova-story-section,
+.nova-csr-section,
+.nova-contact-section,
+.nova-investor-section {
     position: relative;
     overflow: hidden;
     padding: 110px 0;
@@ -324,7 +343,13 @@ address {
 /* =========================================================
    UNIFIED SECTION TITLES
 ========================================================= */
-.nova-display-title, .nova-chairman-heading h2, .nova-vision-intro h2, .nova-vision-panel h3, .nova-investor-top h2, .nova-story-header h2, .nova-contact-heading h2 {
+.nova-display-title,
+.nova-chairman-heading h2,
+.nova-vision-intro h2,
+.nova-vision-panel h3,
+.nova-investor-top h2,
+.nova-story-header h2,
+.nova-contact-heading h2 {
     font-family: var(--font-display);
     font-size: clamp(44px, 5vw, 78px);
     line-height: .98;
@@ -345,9 +370,32 @@ address {
 
 .topbar {
     background: linear-gradient(90deg, #050B1E 0%, #0A1430 14%, #0D1833 26%, #0E1E3A 36%, #0F2A42 48%, #112E4B 58%, #12384E 68%, #143D52 78%, #153E52 86%, #1A4A5C 92%, #1D525E 96%, #23646C 100%);
-    border-bottom: 1px solid rgba(255, 255, 255, .06);
     font-size: 11px;
     position: relative;
+    padding: 8px 0;
+}
+
+.topbar .contact-info{
+   display: flex;
+   align-items: center;
+   gap: 25px;
+}
+
+@media(max-width: 600px) {
+    .topbar .enquire-btn{
+        display: none;
+    }
+    .topbar .contact-info{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 370px){
+    .topbar .contact-info{
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
 }
 
 .topbar::after {
@@ -390,7 +438,9 @@ address {
     transition: color .2s;
 }
 
-.main-nav .nav-link:hover, .main-nav .nav-link.active, .main-nav .nav-link:focus {
+.main-nav .nav-link:hover,
+.main-nav .nav-link.active,
+.main-nav .nav-link:focus {
     color: var(--gold-soft);
 }
 
@@ -477,7 +527,7 @@ address {
     border-radius: 14px !important;
     min-width: 240px;
     padding: 8px !important;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, .35), 0 4px 12px rgba(0,0,0,.15) !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .35), 0 4px 12px rgba(0, 0, 0, .15) !important;
     overflow: hidden;
     background: #fff;
 }
@@ -515,12 +565,18 @@ address {
     height: 16px;
     object-fit: cover;
     border-radius: 3px;
-    box-shadow: 0 0 0 1px rgba(255,255,255,.12);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .12);
     flex: 0 0 22px;
 }
 
 .navbar-brand img {
     width: 140px;
+}
+
+@media (max-width: 400px){
+   .navbar-brand img {
+    width: 100px;
+}
 }
 
 .navbar-expand-xl .navbar-nav .dropdown-menu {
@@ -539,20 +595,20 @@ address {
     }
 }
 
-/* ---------- Dropdown Ã¢â‚¬â€ mobile / collapsed nav ---------- */
 @media (max-width: 1199px) {
     .site-header .nav-item {
         padding: 10px 0;
-        border-bottom: 1px solid rgba(255,255,255,.06);
+        border-bottom: 1px solid rgba(255, 255, 255, .06);
     }
+
     .site-header .nav-item:last-child {
         border-bottom: none;
     }
+
     .main-nav .dropdown-menu:not(.market-menu),
     .market-menu {
         position: static !important;
         transform: none !important;
-        /* hidden by default on mobile Ã¢â‚¬â€ shown only when .show */
         display: none;
         opacity: 1;
         visibility: visible;
@@ -562,12 +618,14 @@ address {
         width: 100%;
         box-shadow: none !important;
     }
+
     .main-nav .dropdown-menu:not(.market-menu).show,
     .market-menu.show,
     .dropdown.show .dropdown-menu {
         display: block;
         animation: dropdownMobileIn .22s ease;
     }
+
     /* remove hover gap on touch devices */
     .dropdown:hover .dropdown-menu {
         transform: none;
@@ -575,12 +633,19 @@ address {
 }
 
 @keyframes dropdownMobileIn {
-    from { opacity: 0; transform: translateY(-6px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero .eyebrow {
-    color: #bdbbbb !important;
+    color: #ededed !important;
 }
 
 /* =========================================================
@@ -636,25 +701,36 @@ address {
     background: transparent;
     transition: all .2s;
 }
+@media (max-width: 400px){
+     .btn-gold{
+       padding: .8rem 1.5rem;
+       font-size: 10px;
+     }
+     .btn-outline-light-gold{
+        padding: .9rem 1.5rem;
+        font-size: 10px;
+     }
+ }
 
 .btn-outline-light-gold:hover {
     border-color: var(--gold);
     color: var(--gold);
+    background: var(--gold);
+    color: #fff;
 }
 
-/* polished divider Ã¢â‚¬â€ subtle 1px, no red debug line */
-.main-nav .dropdown-menu:not(.market-menu) .dropdown-item + .dropdown-item {
+.main-nav .dropdown-menu:not(.market-menu) .dropdown-item+.dropdown-item {
     margin-top: 2px;
 }
 
-.market-menu .dropdown-item + .dropdown-item {
+.market-menu .dropdown-item+.dropdown-item {
     margin-top: 2px;
-    border-top: 1px solid rgba(255,255,255,.06);
+    border-top: 1px solid rgba(255, 255, 255, .06);
     border-bottom: none;
     padding-top: 11px !important;
 }
 
-.main-nav .dropdown-menu:not(.market-menu) .dropdown-item + .dropdown-item {
+.main-nav .dropdown-menu:not(.market-menu) .dropdown-item+.dropdown-item {
     border-top: 1px solid #f0eeea;
 }
 
@@ -712,6 +788,24 @@ address {
     padding-bottom: 50px;
 }
 
+@media (max-width: 768px){
+   .hero-content {
+    padding-top: 150px;
+   }
+   .hero{
+     min-height: 75vh;
+   }
+}
+
+@media (max-width: 500px){
+   .hero-content {
+    padding-top: 100px;
+   }
+   .hero{
+     min-height: 55vh;
+   }
+}
+
 .hero-title {
     max-width: 56rem;
     margin: 0;
@@ -731,6 +825,15 @@ address {
 @media (min-width: 768px) {
     .hero-title {
         font-size: 4rem;
+    }
+    .hero-sub{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-sub{
+        font-size: 14px;
     }
 }
 
@@ -786,7 +889,8 @@ address {
     .market-strip-item {
         border-bottom: none;
         border-right: 1px solid rgba(255, 255, 255, .12);
-        padding-inline: 1.5rem; }
+        padding-inline: 1.5rem;
+    }
 
     .market-strip-item:first-child {
         padding-left: 0;
@@ -857,6 +961,12 @@ address {
     color: rgba(20, 23, 28, .025);
 }
 
+@media (max-width: 600px){
+    .nova-profile-section::before{
+        content: "";
+    }
+}
+
 .nova-profile-bottom {
     display: grid;
     grid-template-columns: repeat(4, 1fr) 2fr;
@@ -918,7 +1028,8 @@ address {
     border: none;
 }
 
-.nova-chairman-section::before, .nova-chairman-section::after {
+.nova-chairman-section::before,
+.nova-chairman-section::after {
     display: none;
 }
 
@@ -1112,6 +1223,11 @@ address {
     color: #0F131F;
 }
 
+@media (max-width: 400px) {
+     .nova-chairman-tags i{
+        display: none;
+    }
+}
 .nova-chairman-tags i {
     color: #23646C;
     font-style: normal;
@@ -1196,7 +1312,10 @@ address {
 }
 
 /* legacy keep */
-.nova-chairman-content, .nova-chairman-heading, .nova-chairman-line, .nova-image-caption {
+.nova-chairman-content,
+.nova-chairman-heading,
+.nova-chairman-line,
+.nova-image-caption {
     display: none;
 }
 
@@ -1394,7 +1513,10 @@ address {
     background: var(--navy);
 }
 
-.nova-location-grid .active-location .nova-location-number, .nova-location-grid .active-location .nova-location-content h3, .nova-location-grid .active-location .nova-location-content p, .nova-location-grid .active-location .nova-location-arrow {
+.nova-location-grid .active-location .nova-location-number,
+.nova-location-grid .active-location .nova-location-content h3,
+.nova-location-grid .active-location .nova-location-content p,
+.nova-location-grid .active-location .nova-location-arrow {
     color: #fff;
 }
 
@@ -2135,6 +2257,12 @@ address {
     opacity: .35;
 }
 
+@media (max-width: 400px){
+    .investor-trust-bar{
+        display: none;
+    }
+}
+
 /* ----- RIGHT COPY ----- */
 .nova-investor-copy {
     display: flex;
@@ -2257,6 +2385,13 @@ address {
     font-size: 13px;
 }
 
+@media (max-width: 600px){
+    .inv-metric i{
+        position: relative;
+        right: 0;
+        bottom: 0;
+    }
+}
 .investor-why {
     display: flex;
     flex-wrap: wrap;
@@ -2291,7 +2426,6 @@ address {
     justify-content: flex-start;
     gap: 16px;
     flex-wrap: wrap;
-    margin-bottom: 22px;
     width: 100%;
 }
 
@@ -3075,7 +3209,7 @@ address {
 .nova-contact-heading {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    margin-bottom: 75px;
+    margin-bottom: 45px;
 }
 
 .nova-contact-heading h2 {
@@ -3193,9 +3327,6 @@ address {
     color: #fff !important;
 }
 
-/* =========================================================
-   NOVA ONE APP ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â compact height + refined design
-========================================================= */
 .nova-app-section {
     background: #fafafa;
     color: #0F131F;
@@ -3344,6 +3475,11 @@ address {
     flex: 0 0 auto;
 }
 
+@media (max-width: 400px){
+     .store-badge i{
+        font-size: 21px;
+     }
+}
 .store-badge:last-child i {
     color: #ff3b30;
 }
@@ -3354,7 +3490,7 @@ address {
 }
 
 .store-badge small {
-    font-size: 10px;
+    font-size: 8px;
     letter-spacing: .07em;
     text-transform: uppercase;
     opacity: .75;
@@ -3363,7 +3499,7 @@ address {
 }
 
 .store-badge strong {
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 700;
     line-height: 1;
 }
@@ -3747,6 +3883,7 @@ address {
         flex: 1 1 0;
         justify-content: center;
         min-width: 108px;
+        flex-direction: column;
     }
 
     .nova-phone {
@@ -3816,7 +3953,6 @@ address {
     overflow: clip;
     background: #0F131F;
     padding: 80px 0;
-    /* Pure CSS parallax fallback ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â bg fixed on desktop */
     background-image: url("../img/newsletter.jpeg");
     background-attachment: fixed;
     background-position: center 60%;
@@ -3855,18 +3991,6 @@ address {
 
     .nova-newsletter-section {
         background-attachment: fixed;
-    }
-}
-
-/* Tablet/Mobile: use JS parallax img, disable CSS fixed (iOS fix) */
-@media (max-width: 991px) {
-    .nova-newsletter-section {
-        background-image: none;
-        background-attachment: scroll;
-    }
-
-    .nova-newsletter-bg {
-        display: block;
     }
 }
 
@@ -3976,8 +4100,8 @@ address {
 
 @media (max-width: 767px) {
     .nova-newsletter-section {
-        min-height: 560px;
-        padding: 60px 0;
+        min-height: 360px;
+        padding: 40px 0;
     }
 
     .nova-newsletter-content h2 {
@@ -3995,7 +4119,8 @@ address {
         gap: 10px;
     }
 
-    .newsletter-row input, .newsletter-row button {
+    .newsletter-row input,
+    .newsletter-row button {
         width: 100%;
         flex: 0 0 auto;
     }
@@ -4023,7 +4148,9 @@ address {
 }
 
 @keyframes softFloat {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
 
@@ -4104,7 +4231,16 @@ address {
 }
 
 @media (max-width: 991px) {
-    .nova-profile-section, .nova-global-section, .nova-vision-section, .nova-portfolio-section, .nova-news-section, .nova-story-section, .nova-csr-section, .nova-contact-section, .nova-investor-section {
+
+    .nova-profile-section,
+    .nova-global-section,
+    .nova-vision-section,
+    .nova-portfolio-section,
+    .nova-news-section,
+    .nova-story-section,
+    .nova-csr-section,
+    .nova-contact-section,
+    .nova-investor-section {
         padding: 80px 0;
     }
 
@@ -4117,13 +4253,18 @@ address {
         padding: 100px 7%;
     }
 
-    .nova-global-heading, .nova-portfolio-header, .nova-news-heading, .nova-csr-heading, .nova-investor-top {
+    .nova-global-heading,
+    .nova-portfolio-header,
+    .nova-news-heading,
+    .nova-csr-heading,
+    .nova-investor-top {
         align-items: flex-start;
         flex-direction: column;
         gap: 30px;
     }
 
-    .nova-portfolio-layout, .nova-news-layout {
+    .nova-portfolio-layout,
+    .nova-news-layout {
         grid-template-columns: 1fr;
     }
 
@@ -4166,7 +4307,16 @@ address {
 }
 
 @media (max-width: 767px) {
-    .nova-profile-section, .nova-global-section, .nova-vision-section, .nova-portfolio-section, .nova-news-section, .nova-story-section, .nova-csr-section, .nova-contact-section, .nova-investor-section {
+
+    .nova-profile-section,
+    .nova-global-section,
+    .nova-vision-section,
+    .nova-portfolio-section,
+    .nova-news-section,
+    .nova-story-section,
+    .nova-csr-section,
+    .nova-contact-section,
+    .nova-investor-section {
         padding: 65px 0;
     }
 
@@ -4183,7 +4333,8 @@ address {
         border-right: 0;
     }
 
-    .nova-profile-number:nth-child(3), .nova-profile-number:nth-child(4) {
+    .nova-profile-number:nth-child(3),
+    .nova-profile-number:nth-child(4) {
         border-top: 1px solid var(--border-c);
     }
 
@@ -4212,7 +4363,8 @@ address {
         border-right: 0;
     }
 
-    .nova-principles>div:nth-child(3), .nova-principles>div:nth-child(4) {
+    .nova-principles>div:nth-child(3),
+    .nova-principles>div:nth-child(4) {
         border-top: 1px solid var(--border-c);
     }
 
@@ -4238,10 +4390,6 @@ address {
 
     .nova-news-featured-content {
         grid-template-columns: 1fr;
-    }
-
-    .nova-news-list article {
-        grid-template-columns: 65px 1fr 20px;
     }
 
     .nova-story-timeline::before {
@@ -4300,7 +4448,8 @@ address {
         grid-template-columns: 1fr;
     }
 
-    .nova-investor-links a, .nova-investor-links a:nth-child(2) {
+    .nova-investor-links a,
+    .nova-investor-links a:nth-child(2) {
         border-right: 1px solid var(--white-border);
     }
 }
@@ -4583,6 +4732,20 @@ address {
 .social-icon svg {
     width: 22px;
     height: 22px;
+}
+
+@media (max-width: 600px) {
+    .fab-wrap{
+        top: 50%;
+    }
+    .social-icon{
+        width: 35px;
+        height: 35px;
+    }
+    .social-icon svg{
+        height: 15px;
+        width: 15px;
+    }
 }
 
 /* stagger */

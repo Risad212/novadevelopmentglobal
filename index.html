@@ -34,10 +34,10 @@
   <header class="site-header sticky-top">
 
     <!-- TOP BAR -->
-    <div class="topbar py-2">
+    <div class="topbar">
       <div class="container d-flex justify-content-between align-items-center">
 
-        <div class="d-flex align-items-center gap-4">
+        <div class="contact-info">
 
           <a href="mailto:info@novadevelopment.com"
             class="d-inline-flex align-items-center gap-2  text-decoration-none small-tracking">
@@ -842,146 +842,151 @@
       </div>
 
 
-      <!-- PROJECT GRID -->
-      <div class="nova-portfolio-grid">
-
+      <!-- PROJECT GRID — Bootstrap columns -->
+      <div class="row g-4">
 
         <!-- PROJECT 1 -->
-        <article class="nova-project-card">
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <article class="nova-project-card w-100 h-100">
 
-          <div class="nova-project-image">
+            <div class="nova-project-image">
 
-            <img src="assets/img/project-featured.jpg" alt="Nova Meadows">
+              <img src="assets/img/project-featured.jpg" alt="Nova Meadows">
 
-            <span class="nova-project-location">
-              BANGLADESH
-            </span>
-
-          </div>
-
-
-          <div class="nova-project-info">
-
-            <div>
-
-              <span class="eyebrow text-gold">
-                LAND DEVELOPMENT
+              <span class="nova-project-location">
+                BANGLADESH
               </span>
-
-              <h3>
-                Nova Meadows
-              </h3>
 
             </div>
 
-            <p>
 
-              A fully planned land estate positioned
-              within Dhaka's eastern growth corridor.
+            <div class="nova-project-info">
 
-            </p>
+              <div>
 
-            <a href="#" class="nova-circle-arrow">
+                <span class="eyebrow text-gold">
+                  LAND DEVELOPMENT
+                </span>
 
-              ↗
+                <h3>
+                  Nova Meadows
+                </h3>
 
-            </a>
+              </div>
 
-          </div>
+              <p>
 
-        </article>
+                A fully planned land estate positioned
+                within Dhaka's eastern growth corridor.
+
+              </p>
+
+              <a href="#" class="nova-circle-arrow">
+
+                ↗
+
+              </a>
+
+            </div>
+
+          </article>
+        </div>
 
 
         <!-- PROJECT 2 -->
-        <article class="nova-project-card">
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <article class="nova-project-card w-100 h-100">
 
-          <div class="nova-project-image">
+            <div class="nova-project-image">
 
-            <img src="assets/img/project-residential.jpg" alt="Nova Harbour Residences">
+              <img src="assets/img/project-residential.jpg" alt="Nova Harbour Residences">
 
-            <span class="nova-project-location">
-              DUBAI
-            </span>
-
-          </div>
-
-
-          <div class="nova-project-info">
-
-            <div>
-
-              <span class="eyebrow text-gold">
-                RESIDENTIAL
+              <span class="nova-project-location">
+                DUBAI
               </span>
-
-              <h3>
-                Nova Harbour Residences
-              </h3>
 
             </div>
 
-            <p>
 
-              Branded waterfront residential
-              development in Dubai Harbour.
+            <div class="nova-project-info">
 
-            </p>
+              <div>
 
-            <a href="#" class="nova-circle-arrow">
+                <span class="eyebrow text-gold">
+                  RESIDENTIAL
+                </span>
 
-              ↗
+                <h3>
+                  Nova Harbour Residences
+                </h3>
 
-            </a>
+              </div>
 
-          </div>
+              <p>
 
-        </article>
+                Branded waterfront residential
+                development in Dubai Harbour.
+
+              </p>
+
+              <a href="#" class="nova-circle-arrow">
+
+                ↗
+
+              </a>
+
+            </div>
+
+          </article>
+        </div>
 
 
         <!-- PROJECT 3 -->
-        <article class="nova-project-card">
+        <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <article class="nova-project-card w-100 h-100">
 
-          <div class="nova-project-image">
+            <div class="nova-project-image">
 
-            <img src="assets/img/project-commercial.jpg" alt="Nova Quay">
+              <img src="assets/img/project-commercial.jpg" alt="Nova Quay">
 
-            <span class="nova-project-location">
-              USA
-            </span>
-
-          </div>
-
-
-          <div class="nova-project-info">
-
-            <div>
-
-              <span class="eyebrow text-gold">
-                COMMERCIAL
+              <span class="nova-project-location">
+                USA
               </span>
-
-              <h3>
-                Nova Quay
-              </h3>
 
             </div>
 
-            <p>
 
-              Grade-A commercial destination
-              in New York.
+            <div class="nova-project-info">
 
-            </p>
+              <div>
 
-            <a href="#" class="nova-circle-arrow">
+                <span class="eyebrow text-gold">
+                  COMMERCIAL
+                </span>
 
-              ↗
+                <h3>
+                  Nova Quay
+                </h3>
 
-            </a>
+              </div>
 
-          </div>
+              <p>
 
-        </article>
+                Grade-A commercial destination
+                in New York.
+
+              </p>
+
+              <a href="#" class="nova-circle-arrow">
+
+                ↗
+
+              </a>
+
+            </div>
+
+          </article>
+        </div>
 
       </div>
 
@@ -1053,28 +1058,28 @@
           <!-- Metrics — investor focused (no duplication of company profile) -->
           <div class="investor-metrics">
             <div class="inv-metric">
+              <i class="fa-solid fa-chart-simple"></i>
               <span class="num">01 — Portfolio</span>
               <strong><sup>$</sup>1.2B</strong>
               <p>Gross development value</p>
-              <i class="fa-solid fa-chart-simple"></i>
             </div>
             <div class="inv-metric">
+               <i class="fa-solid fa-arrow-trend-up"></i>
               <span class="num">02 — Returns</span>
               <strong>18%</strong>
               <p>Target net IRR — risk-adjusted</p>
-              <i class="fa-solid fa-arrow-trend-up"></i>
             </div>
             <div class="inv-metric">
+              <i class="fa-solid fa-handshake"></i>
               <span class="num">03 — Partners</span>
               <strong>120+</strong>
               <p>Institutional &amp; private partners</p>
-              <i class="fa-solid fa-handshake"></i>
             </div>
             <div class="inv-metric">
+              <i class="fa-solid fa-shield-halved"></i>
               <span class="num">04 — Governance</span>
               <strong>100%</strong>
               <p>Audited &amp; board-governed</p>
-              <i class="fa-solid fa-shield-halved"></i>
             </div>
           </div>
 
@@ -1898,7 +1903,7 @@
 
   <section id="nova-newsletter" class="nova-newsletter-section">
     <div class="nova-newsletter-bg">
-      <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2070&auto=format&fit=crop" alt="Dubai luxury terrace — sea view at sunset" loading="lazy">
+      <img src="assets/img/newsletter.jpeg" alt="Dubai luxury terrace — sea view at sunset" loading="lazy">
     </div>
     <div class="nova-newsletter-overlay"></div>
     <div class="container position-relative">
