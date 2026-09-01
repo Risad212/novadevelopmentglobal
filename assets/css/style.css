@@ -36,7 +36,6 @@
     ===================================================== */
     --font-display: "Urbanist", ui-sans-serif, system-ui, sans-serif;
     --font-sans: "Epilogue", ui-sans-serif, system-ui, sans-serif;
-    --font-serif: Georgia, serif;
     /* =====================================================
        NOVA ALIASES
     ===================================================== */
@@ -909,44 +908,7 @@ address {
     }
 }
 
-/* =========================================================
-   PORTFOLIO HERO
-========================================================= */
-.np-hero {
-    position: relative;
-    padding: 5rem 0 7rem;
-    background: var(--navy);
-    color: #ffffff;
-    overflow: hidden;
-}
-
-.np-hero::after {
-    content: "P";
-    position: absolute;
-    right: -20px;
-    bottom: -80px;
-    font-size: 450px;
-    font-weight: 800;
-    color: rgba(255, 255, 255, .03);
-    line-height: 1;
-    pointer-events: none;
-}
-
-.np-hero h1 {
-    margin-bottom: 1rem;
-    font-family: var(--font-display);
-    font-size: clamp(3rem, 6vw, 5rem);
-    line-height: 1;
-    letter-spacing: -.04em;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.np-hero .np-lead {
-    max-width: 600px;
-    color: rgba(255, 255, 255, .65);
-    font-size: 1.1rem;
-}
+/* PORTFOLIO HERO — removed (old hero code, now unified) */
 
 /* =========================================================
    COMPANY PROFILE
@@ -1015,9 +977,10 @@ address {
 .nova-profile-statement p {
     max-width: 350px;
     margin: 12px 0 0;
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 25px;
     line-height: 1.3;
+    font-weight: 600;
     color: #0F131F;
 }
 
@@ -1174,17 +1137,17 @@ address {
 }
 
 .nova-chairman-title em {
-    font-family: var(--font-serif);
-    font-weight: 400;
-    font-style: italic;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-style: normal;
     color: #23646C;
 }
 
 .nova-chairman-title span {
     display: block;
-    font-family: var(--font-serif);
-    font-weight: 400;
-    font-style: italic;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-style: normal;
     color: #0F131F;
 }
 
@@ -1545,7 +1508,7 @@ address {
 .nova-big-quote {
     display: block;
     margin-bottom: -25px;
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 100px;
     line-height: 1;
     color: var(--gold);
@@ -2303,9 +2266,9 @@ address {
 .nova-investor-copy h2 span {
     display: block;
     color: var(--gold-soft);
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 400;
+    font-family: var(--font-display);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .investor-lead {
@@ -4023,7 +3986,7 @@ address {
 
 .nova-newsletter-content h2 {
     margin: 0 0 34px;
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
     font-size: 26px;
     font-weight: 400;
     line-height: 1.6;
@@ -4847,126 +4810,8 @@ address {
 }
 
 /* =========================================================
-  Compnay Profile Page
+  Company Profile Page — unified hero now uses .inner-hero
 ========================================================= */
-.cp-hero {
-    position: relative;
-    background: #0D1833 url('../img/newsletter.jpeg') center 65%/cover no-repeat;
-    color: #fff;
-    padding: 110px 0 100px;
-    overflow: hidden;
-    min-height: 540px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.cp-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(13, 24, 51, .82) 0%, rgba(13, 24, 51, .68) 38%, rgba(13, 24, 51, .32) 68%, rgba(13, 24, 51, .12) 100%), linear-gradient(180deg, rgba(13, 24, 51, .08) 0%, rgba(13, 24, 51, .22) 100%);
-    pointer-events: none;
-}
-
-.cp-hero::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, .14), rgba(255, 255, 255, 0) 70%);
-    pointer-events: none;
-    z-index: 1;
-}
-
-.cp-hero .container {
-    position: relative;
-    z-index: 1;
-}
-
-.cp-breadcrumb {
-    font-size: 10px;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, .62);
-    margin-bottom: 22px;
-    font-weight: 600;
-}
-
-.cp-breadcrumb a {
-    color: rgba(255, 255, 255, .9);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 1px;
-    transition: border-color .2s;
-}
-
-.cp-breadcrumb a:hover {
-    color: #fff;
-    border-color: rgba(255, 255, 255, .4);
-}
-
-.cp-hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(40px, 5vw, 66px);
-    line-height: .92;
-    letter-spacing: -.06em;
-    font-weight: 800;
-    color: #fff;
-    margin: 0;
-    max-width: 640px;
-    text-shadow: 0 2px 18px rgba(0, 0, 0, .18);
-}
-
-.cp-hero h1 span {
-    display: block;
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 400;
-    color: #fff;
-    opacity: .92;
-    margin-top: 2px;
-}
-
-.cp-hero p {
-    max-width: 520px;
-    margin: 20px 0 0;
-    color: rgba(255, 255, 255, .78);
-    line-height: 1.8;
-    font-size: 14.5px;
-    font-weight: 400;
-}
-
-.cp-hero-meta {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.cp-hero-meta span {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    padding: 7px 13px;
-    background: rgba(255, 255, 255, .10);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, .14);
-    border-radius: 999px;
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: .02em;
-    color: #fff;
-}
-
-.cp-hero-meta i {
-    color: #fff;
-    opacity: .9;
-    font-size: 11px;
-}
 
 .btn-gold {
     padding: 14px 28px !important;
@@ -5245,11 +5090,6 @@ a.btn[style*="background:#fff"]:hover span {
 }
 
 @media (max-width: 991px) {
-    .cp-hero {
-        min-height: 440px;
-        padding: 80px 0 70px;
-    }
-
     .cp-intro {
         padding: 70px 0;
     }
@@ -5281,11 +5121,6 @@ a.btn[style*="background:#fff"]:hover span {
 }
 
 @media (max-width: 767px) {
-    .cp-hero {
-        min-height: 380px;
-        padding: 60px 0 50px;
-    }
-
     .cp-intro {
         padding: 60px 0;
     }
@@ -5309,19 +5144,6 @@ a.btn[style*="background:#fff"]:hover span {
 }
 
 @media (max-width: 575px) {
-    .cp-hero {
-        min-height: 340px;
-        padding: 50px 0 40px;
-    }
-
-    .cp-hero h1 {
-        font-size: clamp(32px, 8vw, 44px);
-    }
-
-    .cp-hero p {
-        font-size: 13.5px;
-    }
-
     .cp-intro {
         padding: 50px 0;
     }
@@ -5372,136 +5194,14 @@ a.btn[style*="background:#fff"]:hover span {
         min-height: 42px !important;
     }
 
-    .cp-hero h1 {
-        font-size: 28px;
-    }
-
     .cp-values h2 {
         font-size: 26px !important;
     }
 }
 
 /* =========================================================
-  Contact Page
+  Contact Page — unified hero now uses .inner-hero
 ========================================================= */
-.contact-hero {
-    position: relative;
-    background: #0D1833 url('../img/contact-hero.jpg') center 50%/cover no-repeat;
-    /* Real estate type — Emirates Towers close-up */
-    color: #fff;
-    padding: 110px 0 100px;
-    overflow: hidden;
-    min-height: 540px;
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-.contact-hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(13, 24, 51, .82) 0%, rgba(13, 24, 51, .68) 38%, rgba(13, 24, 51, .32) 68%, rgba(13, 24, 51, .12) 100%), linear-gradient(180deg, rgba(13, 24, 51, .08) 0%, rgba(13, 24, 51, .22) 100%);
-    pointer-events: none;
-}
-
-.contact-hero::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, .14), rgba(255, 255, 255, 0) 70%);
-    pointer-events: none;
-    z-index: 1;
-}
-
-.contact-hero .container {
-    position: relative;
-    z-index: 1;
-}
-
-.contact-breadcrumb {
-    font-size: 10px;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, .62);
-    margin-bottom: 22px;
-    font-weight: 600;
-}
-
-.contact-breadcrumb a {
-    color: rgba(255, 255, 255, .9);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    padding-bottom: 1px;
-    transition: border-color .2s;
-}
-
-.contact-breadcrumb a:hover {
-    color: #fff;
-    border-color: rgba(255, 255, 255, .4);
-}
-
-.contact-hero h1 {
-    font-family: var(--font-display);
-    font-size: clamp(40px, 5vw, 66px);
-    line-height: .92;
-    letter-spacing: -.06em;
-    font-weight: 800;
-    color: #fff;
-    margin: 0;
-    max-width: 640px;
-    text-shadow: 0 2px 18px rgba(0, 0, 0, .18);
-}
-
-.contact-hero h1 span {
-    display: block;
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 400;
-    color: #fff;
-    opacity: .92;
-    margin-top: 2px;
-}
-
-.contact-hero p {
-    max-width: 520px;
-    margin: 20px 0 0;
-    color: rgba(255, 255, 255, .78);
-    line-height: 1.8;
-    font-size: 14.5px;
-}
-
-.contact-hero-badges {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.contact-hero-badges span {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    padding: 7px 13px;
-    background: rgba(255, 255, 255, .10);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, .14);
-    border-radius: 999px;
-    font-size: 10.5px;
-    font-weight: 600;
-    letter-spacing: .02em;
-    color: #fff;
-}
-
-.contact-hero-badges i {
-    color: #fff;
-    opacity: .9;
-    font-size: 11px;
-}
 
 /* MAIN — LUXURY (sand + thin gold, generous whitespace) */
 .contact-main {
@@ -5551,8 +5251,8 @@ a.btn[style*="background:#fff"]:hover span {
     font-size: 13px;
     line-height: 1.7;
     margin: 12px 0 14px;
-    font-style: italic;
-    font-family: var(--font-serif);
+    font-style: normal;
+    font-family: var(--font-sans);
 }
 
 .form-trust {
@@ -5626,8 +5326,8 @@ a.btn[style*="background:#fff"]:hover span {
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: rgba(15, 19, 31, .32);
-    font-style: italic;
-    font-family: var(--font-serif);
+    font-style: normal;
+    font-family: var(--font-sans);
 }
 
 .form-group input:focus,
@@ -5879,9 +5579,9 @@ a.btn[style*="background:#fff"]:hover span {
 
 .offices-head h2 span {
     color: var(--gold-soft);
-    font-family: var(--font-serif);
-    font-style: italic;
-    font-weight: 400;
+    font-family: var(--font-display);
+    font-style: normal;
+    font-weight: 700;
 }
 
 .offices-head h2::after {
@@ -5908,8 +5608,8 @@ a.btn[style*="background:#fff"]:hover span {
     font-size: 13px;
     line-height: 1.7;
     margin: 0;
-    font-family: var(--font-serif);
-    font-style: italic;
+    font-family: var(--font-sans);
+    font-style: normal;
 }
 
 .office-grid {
@@ -6172,11 +5872,6 @@ a.btn[style*="background:#fff"]:hover span {
 }
 
 @media (max-width:991px) {
-    .contact-hero {
-        min-height: 440px;
-        padding: 80px 0 70px;
-    }
-
     .contact-main {
         padding: 60px 0;
     }
@@ -6199,15 +5894,6 @@ a.btn[style*="background:#fff"]:hover span {
 }
 
 @media (max-width:575px) {
-    .contact-hero {
-        min-height: 340px;
-        padding: 50px 0 40px;
-    }
-
-    .contact-hero h1 {
-        font-size: clamp(32px, 8vw, 44px);
-    }
-
     .contact-form-card {
         padding: 22px 18px;
         border-radius: 16px;
@@ -6244,18 +5930,6 @@ a.btn[style*="background:#fff"]:hover span {
         bottom: 12px;
         max-width: none;
     }
-}
-
-.contact-hero h1 {
-    font-size: clamp(46px, 5.6vw, 74px) !important;
-}
-
-.contact-hero p {
-    font-size: 16.5px !important;
-}
-
-.contact-hero-badges span {
-    font-size: 12.5px !important;
 }
 
 .contact-form-card h2 {
@@ -6319,7 +5993,6 @@ a.btn[style*="background:#fff"]:hover span {
    ========================================================= */
 .inner-hero {
     position: relative;
-    background: #0D1833 url('assets/img/newsletter.jpeg') center 65%/cover no-repeat;
     color: #fff;
     padding: 60px 0 60px;
     overflow: hidden;
@@ -6327,13 +6000,15 @@ a.btn[style*="background:#fff"]:hover span {
     align-items: center;
     text-align: left;
 }
+
 .inner-hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(13,24,51,.82) 0%, rgba(13,24,51,.68) 38%, rgba(13,24,51,.32) 68%, rgba(13,24,51,.12) 100%), linear-gradient(180deg, rgba(13,24,51,.08) 0%, rgba(13,24,51,.22) 100%);
+    background: linear-gradient(90deg, rgba(13, 24, 51, .82) 0%, rgba(13, 24, 51, .68) 38%, rgba(13, 24, 51, .32) 68%, rgba(13, 24, 51, .12) 100%), linear-gradient(180deg, rgba(13, 24, 51, .08) 0%, rgba(13, 24, 51, .22) 100%);
     pointer-events: none;
 }
+
 .inner-hero::after {
     content: "";
     position: absolute;
@@ -6341,21 +6016,291 @@ a.btn[style*="background:#fff"]:hover span {
     right: 0;
     bottom: 0;
     height: 1px;
-    background: linear-gradient(90deg, rgba(255,255,255,.14), rgba(255,255,255,0) 70%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, .14), rgba(255, 255, 255, 0) 70%);
     pointer-events: none;
     z-index: 1;
 }
-.inner-hero .container { position: relative; z-index: 1; }
-.inner-breadcrumb { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.62); margin-bottom: 22px; font-weight: 600; }
-.inner-breadcrumb a { color: rgba(255,255,255,.9); text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 1px; transition: border-color .2s; }
-.inner-breadcrumb a:hover { color: #fff; border-color: rgba(255,255,255,.4); }
-.inner-hero h1 { font-family: var(--font-display); font-size: clamp(40px, 5vw, 66px); line-height: .92; letter-spacing: -.06em; font-weight: 800; color: #fff; margin: 0; max-width: 640px; text-shadow: 0 2px 18px rgba(0,0,0,.18); }
-.inner-hero h1 span { display: block; font-family: var(--font-serif); font-style: italic; font-weight: 400; color: #fff; opacity: .92; margin-top: 2px; }
-.inner-hero h1 em { font-family: var(--font-serif); font-style: italic; font-weight: 400; color: var(--gold-soft); }
-.inner-hero p { max-width: 520px; margin: 20px 0 0; color: rgba(255,255,255,.78); line-height: 1.8; font-size: 14.5px; }
-.inner-hero-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 30px; }
-.inner-hero-badges span { display: inline-flex; align-items: center; gap: 7px; padding: 7px 13px; background: rgba(255,255,255,.10); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,.14); border-radius: 999px; font-size: 10.5px; font-weight: 600; letter-spacing: .02em; color: #fff; }
-.inner-hero-badges i { color: #fff; opacity: .9; font-size: 11px; }
-@media (max-width: 991px){ .inner-hero{ min-height:440px; padding:80px 0 70px; } }
-@media (max-width: 767px){ .inner-hero{ min-height:380px; padding:60px 0 50px; } }
-@media (max-width: 575px){ .inner-hero{ min-height:340px; padding:50px 0 40px; } .inner-hero h1{ font-size:clamp(32px,8vw,44px);} }
+
+.inner-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.inner-breadcrumb {
+    font-size: 10px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .62);
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+.inner-breadcrumb a {
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: border-color .2s;
+}
+
+.inner-breadcrumb a:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, .4);
+}
+
+.inner-hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(40px, 5vw, 66px);
+    line-height: .92;
+    letter-spacing: -.06em;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+    max-width: 640px;
+    text-shadow: 0 2px 18px rgba(0, 0, 0, .18);
+}
+
+.inner-hero h1 span {
+    display: block;
+    font-family: var(--font-display);
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    opacity: .92;
+    margin-top: 2px;
+}
+
+.inner-hero h1 em {
+    font-family: var(--font-display);
+    font-style: normal;
+    font-weight: 700;
+    color: var(--gold-soft);
+}
+
+.inner-hero p {
+    max-width: 520px;
+    margin: 20px 0 0;
+    color: rgba(255, 255, 255, .78);
+    line-height: 1.8;
+    font-size: 14.5px;
+}
+
+.inner-hero-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.inner-hero-badges span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 7px 13px;
+    background: rgba(255, 255, 255, .10);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, .14);
+    border-radius: 999px;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    color: #fff;
+}
+
+.inner-hero-badges i {
+    color: #fff;
+    opacity: .9;
+    font-size: 11px;
+}
+
+@media (max-width: 991px) {
+    .inner-hero {
+        min-height: 440px;
+        padding: 80px 0 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .inner-hero {
+        min-height: 380px;
+        padding: 60px 0 50px;
+    }
+}
+
+@media (max-width: 575px) {
+    .inner-hero {
+        min-height: 340px;
+        padding: 50px 0 40px;
+    }
+
+    .inner-hero h1 {
+        font-size: clamp(32px, 8vw, 44px);
+    }
+}
+
+
+/* =========================================================
+   CHAIRMANG MESSAGE
+   ========================================================= */
+.stg-top{
+    text-align: center;
+    padding: 36px 0px;
+}
+
+.stg-image img {
+    width: 380px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 18px 40px rgba(15, 19, 31, .10);
+    border: 1px solid #EDE9E3;
+}
+
+.stg-name {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.stg-name h2 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -.02em;
+    color: #0F131F;
+    margin: 0;
+}
+
+.stg-name span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+.stg-message {
+    background: #FCFBF9;
+    padding: 50px 0 60px;
+    border-top: 1px solid #EDE9E3;
+}
+
+.stg-message-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.stg-message-inner p {
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: #2a2f45;
+    margin: 0 0 18px;
+}
+
+.stg-message-inner p.lead {
+    font-size: 16px;
+    color: #0F131F;
+    font-weight: 500;
+}
+
+.stg-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.stg-pillar {
+    background: #fff;
+    border: 1px solid #EDE9E3;
+    border-radius: 14px;
+    padding: 20px 18px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(15, 19, 31, .04);
+}
+
+.stg-pillar i {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--sand);
+    border: 1px solid #EDE9E3;
+    color: var(--gold);
+    margin: 0 auto 10px;
+}
+
+.stg-pillar strong {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0F131F;
+    margin-bottom: 6px;
+    letter-spacing: -.01em;
+}
+
+.stg-pillar span {
+    font-size: 12.5px;
+    line-height: 1.6;
+    color: var(--muted-body);
+}
+
+.stg-closing {
+    margin-top: 32px;
+    padding: 18px 20px;
+    background: #0D1833;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.stg-closing p {
+    color: rgba(255, 255, 255, .72);
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.stg-closing strong {
+    color: #fff;
+    font-size: 13px;
+}
+
+/* CHAIRMAN FONT INCREASE — luxury readability */
+body {
+    font-size: 16.5px;
+}
+
+.stg-message-inner p {
+    font-size: 15.5px !important;
+}
+
+.stg-message-inner p.lead {
+    font-size: 17px !important;
+}
+
+.stg-pillar strong {
+    font-size: 14px !important;
+}
+
+.stg-pillar span {
+    font-size: 13.5px !important;
+}
+
+@media (max-width:767px) {
+    .stg-pillars {
+        grid-template-columns: 1fr;
+    }
+
+    .stg-message {
+        padding: 40px 0 50px;
+    }
+
+    .stg-image img {
+        width: 300px;
+    }
+}
