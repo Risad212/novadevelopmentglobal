@@ -185,7 +185,7 @@ address {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: .18em;
@@ -908,7 +908,7 @@ address {
     }
 }
 
-/* PORTFOLIO HERO â€” removed (old hero code, now unified) */
+/* PORTFOLIO HERO ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â removed (old hero code, now unified) */
 
 /* =========================================================
    COMPANY PROFILE
@@ -4810,7 +4810,7 @@ address {
 }
 
 /* =========================================================
-  Company Profile Page â€” unified hero now uses .inner-hero
+  Company Profile Page ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â unified hero now uses .inner-hero
 ========================================================= */
 
 .btn-gold {
@@ -4850,7 +4850,7 @@ address {
     transform: translate(4px, -4px);
 }
 
-/* Normalize white buttons to same height as green â€” 1px border exists inline, so match with min-height + box-sizing */
+/* Normalize white buttons to same height as green ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 1px border exists inline, so match with min-height + box-sizing */
 a.btn[style*="background: #fff"],
 a.btn[style*="background:#fff"] {
     min-height: 44px !important;
@@ -4859,7 +4859,7 @@ a.btn[style*="background:#fff"] {
     line-height: 1 !important;
 }
 
-/* White buttons â€” hover state (Chairman message & Explore portfolio) */
+/* White buttons ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â hover state (Chairman message & Explore portfolio) */
 a.btn[style*="background: #fff"]:hover,
 a.btn[style*="background:#fff"]:hover {
     background: #0F131F !important;
@@ -5200,10 +5200,10 @@ a.btn[style*="background:#fff"]:hover span {
 }
 
 /* =========================================================
-  Contact Page â€” unified hero now uses .inner-hero
+  Contact Page ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â unified hero now uses .inner-hero
 ========================================================= */
 
-/* MAIN â€” LUXURY (sand + thin gold, generous whitespace) */
+/* MAIN ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â LUXURY (sand + thin gold, generous whitespace) */
 .contact-main {
     background: linear-gradient(90deg, #FFFFFF 0%, #FDFCFB 55%, #F6F4EF 100%);
     padding: 80px 0 90px;
@@ -5550,7 +5550,7 @@ a.btn[style*="background:#fff"]:hover span {
     font-size: 11px;
 }
 
-/* OFFICES â€” LUXURY (sand, thin hairline, image + serif) */
+/* OFFICES ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â LUXURY (sand, thin hairline, image + serif) */
 .contact-offices {
     background: linear-gradient(90deg, #0D1833 0%, #0F1E3A 45%, #112E4B 55%, #143D52 100%);
     padding: 80px 0;
@@ -5797,7 +5797,7 @@ a.btn[style*="background:#fff"]:hover span {
 }
 
 
-/* MAP â€” LUXURY (hairline + pill dark) */
+/* MAP ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â LUXURY (hairline + pill dark) */
 .contact-map {
     background: #fff;
     border-top: 1px solid #EDE9E3;
@@ -6270,7 +6270,7 @@ a.btn[style*="background:#fff"]:hover span {
     font-size: 13px;
 }
 
-/* CHAIRMAN FONT INCREASE â€” luxury readability */
+/* CHAIRMAN FONT INCREASE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â luxury readability */
 body {
     font-size: 16.5px;
 }
@@ -6305,7 +6305,7 @@ body {
     }
 }
 /* =========================================================
-   PORTFOLIO PAGE â€” modern filterable
+   PORTFOLIO PAGE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â modern filterable
    ========================================================= */
 .portfolio-hero-stats {
     display: flex;
@@ -6425,4 +6425,68 @@ body {
 .portfolio-empty h4 { font-family:var(--font-display); font-weight:800; color:#0F131F; margin:0 0 6px; }
 .portfolio-empty p { color:var(--muted-body); font-size:13px; margin:0 0 14px; }
 .portfolio-empty button { padding:9px 16px; border-radius:999px; border:1px solid var(--gold); background:var(--gold); color:#fff; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; cursor:pointer; }
+/* =========================================================
+   VISION & MISSION PAGE
+   ========================================================= */
+.vm-hero-stats { display:flex; gap:18px; flex-wrap:wrap; margin-top:28px; padding-top:22px; border-top:1px solid rgba(255,255,255,.14); max-width:560px; }
+.vm-hero-stats div { display:flex; flex-direction:column; gap:2px; }
+.vm-hero-stats strong { font-family:var(--font-display); font-size:28px; font-weight:800; letter-spacing:-.03em; color:#fff; line-height:1; }
+.vm-hero-stats span { font-size:10.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:rgba(255,255,255,.62); }
+.vm-hero-stats em { font-style:normal; font-size:11px; color:var(--gold-soft); font-weight:700; }
+.vm-subnav { position:sticky; top:64px; z-index:9; background:rgba(246,244,239,.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--border-c); padding:10px 0; }
+.vm-subnav a { font-size:11px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--muted-body); text-decoration:none; padding:8px 14px; border:1px solid transparent; border-radius:999px; transition:all .2s; }
+.vm-subnav a:hover { color:#0F131F; border-color:var(--border-c); background:#fff; }
+.vm-intro { background:var(--sand); padding:56px 0 32px; }
+.vm-big-quote { max-width:860px; margin:28px auto 0; text-align:center; position:relative; }
+.vm-big-quote .vm-q { font-family:var(--font-display); font-size:72px; line-height:1; color:var(--gold); opacity:.18; display:block; }
+.vm-big-quote h2 { font-family:var(--font-display); font-size:clamp(32px,5vw,52px); font-weight:800; letter-spacing:-.04em; line-height:.95; color:#0F131F; margin:-18px 0 16px; }
+.vm-big-quote h2 span { color:var(--gold); }
+.vm-big-quote p { max-width:640px; margin:0 auto; color:var(--muted-body); font-size:15px; line-height:1.7; }
+.vm-split { padding:64px 0; background:#fff; border-top:1px solid var(--border-c); }
+.vm-split--alt { background:var(--sand); }
+.vm-split-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; }
+.vm-split--alt .vm-split-grid { grid-template-columns:.95fr 1.05fr; }
+.vm-num { display:block; font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
+.vm-split-text h2 { font-family:var(--font-display); font-size:clamp(28px,3.8vw,42px); font-weight:800; letter-spacing:-.04em; line-height:.98; color:#0F131F; margin:0; }
+.vm-split-text h2 span { color:var(--gold); }
+.vm-lead { font-size:16px; line-height:1.65; color:#0F131F; font-weight:500; margin:0 0 14px; }
+.vm-split-text p { color:var(--muted-body); font-size:14.5px; line-height:1.75; margin:0 0 10px; }
+.vm-checks { list-style:none; padding:0; margin:18px 0 0; display:grid; gap:10px; }
+.vm-checks li { display:flex; gap:10px; align-items:flex-start; font-size:13.5px; color:#0F131F; line-height:1.5; }
+.vm-checks i { color:var(--gold); margin-top:3px; font-size:12px; flex:0 0 12px; }
+.vm-split-media { position:relative; border-radius:16px; overflow:hidden; border:1px solid var(--border-c); box-shadow:0 16px 40px rgba(15,19,31,.08); }
+.vm-split-media img { width:100%; height:420px; object-fit:cover; display:block; }
+.vm-media-cap { position:absolute; left:14px; right:14px; bottom:14px; background:#0F131F; color:#fff; border-radius:12px; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+.vm-media-cap span { font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold-soft); font-weight:700; }
+.vm-media-cap strong { font-size:12px; font-weight:700; }
+.vm-mission-cards { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-top:22px; }
+.vm-mission-cards div { background:var(--sand); border:1px solid var(--border-c); border-radius:12px; padding:14px 12px; text-align:center; }
+.vm-mission-cards i { color:var(--gold); font-size:18px; margin-bottom:8px; display:block; }
+.vm-mission-cards strong { display:block; font-size:12.5px; font-weight:800; color:#0F131F; letter-spacing:-.01em; }
+.vm-mission-cards span { font-size:11px; color:var(--muted-body); line-height:1.4; }
+.vm-values { background:var(--navy); color:#fff; padding:64px 0; }
+.vm-values h2 { font-family:var(--font-display); font-size:clamp(32px,4vw,44px); font-weight:800; letter-spacing:-.04em; line-height:.98; margin:0; color:#fff; }
+.vm-values h2 span { color:var(--gold-soft); }
+.vm-values-lead { color:rgba(255,255,255,.6); max-width:640px; margin:14px 0 0; line-height:1.7; font-size:14px; }
+.vm-values-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:36px; }
+.vm-value-card { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.1); border-radius:16px; padding:22px 20px; }
+.vm-value-card .num { font-size:11px; letter-spacing:.14em; color:var(--gold-soft); font-weight:700; }
+.vm-value-card i { display:block; margin:10px 0 12px; font-size:22px; color:var(--gold-soft); }
+.vm-value-card strong { display:block; font-family:var(--font-display); font-size:18px; font-weight:800; letter-spacing:-.02em; margin-bottom:8px; }
+.vm-value-card p { margin:0; font-size:13px; line-height:1.65; color:rgba(255,255,255,.68); }
+.vm-principles { background:var(--sand); padding:64px 0; }
+.vm-principles h2 { font-family:var(--font-display); font-size:clamp(28px,3.5vw,40px); font-weight:800; letter-spacing:-.04em; margin:0; color:#0F131F; }
+.vm-principles h2 span { color:var(--gold); }
+.vm-principles-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:32px; }
+.vm-principle { background:#fff; border:1px solid var(--border-c); border-radius:16px; padding:22px 20px; }
+.vm-principle i { width:40px; height:40px; border-radius:10px; display:grid; place-items:center; background:var(--sand); border:1px solid var(--border-c); color:var(--gold); margin-bottom:14px; }
+.vm-principle h3 { font-size:14px; font-weight:800; letter-spacing:-.01em; margin:0 0 8px; color:#0F131F; }
+.vm-principle p { margin:0; font-size:13px; line-height:1.6; color:var(--muted-body); }
+.vm-cta { background:#fff; border-top:1px solid var(--border-c); padding:56px 0; }
+.vm-cta h3 { font-family:var(--font-display); font-size:26px; font-weight:800; letter-spacing:-.03em; margin:0; color:#0F131F; }
+.vm-cta h3 span { color:var(--gold); }
+.vm-cta p { margin:8px 0 0; color:var(--muted-body); font-size:14px; }
+@media (max-width:991px){ .vm-split-grid, .vm-split--alt .vm-split-grid{ grid-template-columns:1fr; } .vm-split-media img{ height:340px; } .vm-values-grid, .vm-principles-grid{ grid-template-columns:repeat(2,1fr); } .vm-mission-cards{ grid-template-columns:repeat(2,1fr); } .vm-subnav{top:56px;} }
+@media (max-width:575px){ .vm-values-grid, .vm-principles-grid{ grid-template-columns:1fr; } .vm-hero-stats{ gap:14px; } .vm-media-cap{ flex-direction:column; align-items:flex-start; } }
+
 
