@@ -908,7 +908,7 @@ address {
     }
 }
 
-/* PORTFOLIO HERO ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â removed (old hero code, now unified) */
+/* PORTFOLIO HERO ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â removed (old hero code, now unified) */
 
 /* =========================================================
    COMPANY PROFILE
@@ -4810,7 +4810,7 @@ address {
 }
 
 /* =========================================================
-  Company Profile Page ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â unified hero now uses .inner-hero
+  Company Profile Page ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â unified hero now uses .inner-hero
 ========================================================= */
 
 .btn-gold {
@@ -4850,7 +4850,7 @@ address {
     transform: translate(4px, -4px);
 }
 
-/* Normalize white buttons to same height as green ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â 1px border exists inline, so match with min-height + box-sizing */
+/* Normalize white buttons to same height as green ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â 1px border exists inline, so match with min-height + box-sizing */
 a.btn[style*="background: #fff"],
 a.btn[style*="background:#fff"] {
     min-height: 44px !important;
@@ -4859,7 +4859,7 @@ a.btn[style*="background:#fff"] {
     line-height: 1 !important;
 }
 
-/* White buttons ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â hover state (Chairman message & Explore portfolio) */
+/* White buttons ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â hover state (Chairman message & Explore portfolio) */
 a.btn[style*="background: #fff"]:hover,
 a.btn[style*="background:#fff"]:hover {
     background: #0F131F !important;
@@ -5200,10 +5200,10 @@ a.btn[style*="background:#fff"]:hover span {
 }
 
 /* =========================================================
-  Contact Page ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â unified hero now uses .inner-hero
+  Contact Page ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â unified hero now uses .inner-hero
 ========================================================= */
 
-/* MAIN ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â LUXURY (sand + thin gold, generous whitespace) */
+/* MAIN ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â LUXURY (sand + thin gold, generous whitespace) */
 .contact-main {
     background: linear-gradient(90deg, #FFFFFF 0%, #FDFCFB 55%, #F6F4EF 100%);
     padding: 80px 0 90px;
@@ -5550,7 +5550,7 @@ a.btn[style*="background:#fff"]:hover span {
     font-size: 11px;
 }
 
-/* OFFICES ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â LUXURY (sand, thin hairline, image + serif) */
+/* OFFICES ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â LUXURY (sand, thin hairline, image + serif) */
 .contact-offices {
     background: linear-gradient(90deg, #0D1833 0%, #0F1E3A 45%, #112E4B 55%, #143D52 100%);
     padding: 80px 0;
@@ -5797,7 +5797,7 @@ a.btn[style*="background:#fff"]:hover span {
 }
 
 
-/* MAP ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â LUXURY (hairline + pill dark) */
+/* MAP ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â LUXURY (hairline + pill dark) */
 .contact-map {
     background: #fff;
     border-top: 1px solid #EDE9E3;
@@ -6270,7 +6270,7 @@ a.btn[style*="background:#fff"]:hover span {
     font-size: 13px;
 }
 
-/* CHAIRMAN FONT INCREASE ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â luxury readability */
+/* CHAIRMAN FONT INCREASE ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â luxury readability */
 body {
     font-size: 16.5px;
 }
@@ -6305,7 +6305,7 @@ body {
     }
 }
 /* =========================================================
-   PORTFOLIO PAGE ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â modern filterable
+   PORTFOLIO PAGE ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â modern filterable
    ========================================================= */
 .portfolio-hero-stats {
     display: flex;
@@ -6374,7 +6374,7 @@ body {
 @media (max-width:991px){ .portfolio-grid{ grid-template-columns: repeat(2,1fr);} .portfolio-controls{ top:56px; } }
 @media (max-width:575px){ .portfolio-grid{ grid-template-columns: 1fr;} .portfolio-search{ min-width:0; flex:1 1 100%; } }
 .portfolio-grid[style*="block"] { position: relative !important; }
-.portfolio-grid[style*="block"] .portfolio-card { width: calc(33.333% - 20px); margin: 0 10px 20px 10px; animation: none !important; box-sizing: border-box; will-change: opacity; transition: opacity 0.45s ease !important; }
+.portfolio-grid[style*="block"] .portfolio-card {width: calc(33.333% - 20px);margin: 0 10px 20px 10px;animation: none !important;box-sizing: border-box;will-change: opacity;transition: all 0.45s ease !important;}
 @media (max-width:991px){ .portfolio-grid[style*="block"] .portfolio-card { width: calc(50% - 20px); } }
 @media (max-width:575px){ .portfolio-grid[style*="block"] .portfolio-card { width: 100%; margin-left:0; margin-right:0; } }
 
@@ -6491,7 +6491,7 @@ body {
 
 
 /* =========================================================
-   INVESTORS PAGE â€” PREMIUM
+   INVESTORS PAGE Ã¢â‚¬â€ PREMIUM
    ========================================================= */
 .inv-metrics-section { background:var(--navy); color:#fff; padding:84px 0; }
 .inv-metrics-section h2 { font-family:var(--font-display); font-size:clamp(36px,4.5vw,52px); font-weight:800; letter-spacing:-.05em; line-height:.92; margin:0; color:#fff; }
@@ -6518,7 +6518,7 @@ body {
 .inv-market strong { font-size:14px; font-weight:800; color:#0F131F; margin-top:8px; letter-spacing:-.01em; }
 .inv-market span { font-size:12.5px; color:var(--muted-body); line-height:1.5; }
 .inv-market small { font-size:10.5px; color:var(--gold); font-weight:700; letter-spacing:.08em; text-transform:uppercase; margin-top:6px; }
-/* Premium â€” consistent section rhythm */
+/* Premium Ã¢â‚¬â€ consistent section rhythm */
 .investors-premium .vm-split { padding:84px 0; }
 .investors-premium .vm-split-text h2 { font-size:clamp(32px,4vw,46px); letter-spacing:-.05em; }
 .investors-premium .vm-intro-premium { background:var(--sand); padding:64px 0 48px; text-align:center; }
@@ -6570,7 +6570,7 @@ body {
 
 
 /* =========================================================
-   NEWSROOM PAGE — MODERN EDITORIAL (separate from index)
+   NEWSROOM PAGE â€” MODERN EDITORIAL (separate from index)
    ========================================================= */
 .nr-subnav .nr-filter-label { font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted-body); margin-right:4px; }
 .nr-modern { background:#fff; padding:48px 0 84px; }
@@ -6613,4 +6613,59 @@ body {
 @media (max-width:575px){ .inv-metrics-grid, .inv-markets-grid{ grid-template-columns:1fr; } }
 @media (max-width:991px){ .vm-split-grid, .vm-split--alt .vm-split-grid{ grid-template-columns:1fr; } .vm-split-media img{ height:340px; } .vm-values-grid, .vm-principles-grid{ grid-template-columns:repeat(2,1fr); } .vm-mission-cards{ grid-template-columns:repeat(2,1fr); } .vm-subnav{top:56px;} }
 @media (max-width:575px){ .vm-values-grid, .vm-principles-grid{ grid-template-columns:1fr; } .vm-hero-stats{ gap:14px; } .vm-media-cap{ flex-direction:column; align-items:flex-start; } }
-
+/* =========================================================
+   NEWS SINGLE PAGE
+   ========================================================= */
+.ns-hero { background:var(--sand); padding:48px 0 32px; border-bottom:1px solid var(--border-c); }
+.ns-breadcrumb { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted-body); margin-bottom:16px; }
+.ns-breadcrumb a { color:var(--muted-body); text-decoration:none; }
+.ns-breadcrumb a:hover { color:#0F131F; }
+.ns-breadcrumb span { color:#0F131F; font-weight:700; }
+.ns-meta { display:flex; gap:10px; align-items:center; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted-body); margin-bottom:14px; }
+.ns-kicker { background:#0F131F; color:#fff; padding:4px 8px; border-radius:999px; font-size:10px; letter-spacing:.12em; }
+.ns-hero h1 { font-family:var(--font-display); font-size:clamp(28px,4vw,44px); font-weight:800; letter-spacing:-.04em; line-height:.95; color:#0F131F; max-width:860px; margin:0 0 14px; }
+.ns-lead { max-width:720px; color:var(--muted-body); font-size:16px; line-height:1.65; margin:0; }
+.ns-share { display:flex; gap:10px; align-items:center; margin-top:18px; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted-body); font-weight:700; }
+.ns-share a { width:32px; height:32px; border-radius:50%; display:grid; place-items:center; background:#fff; border:1px solid var(--border-c); color:#0F131F; text-decoration:none; }
+.ns-share a:hover { background:#0F131F; color:#fff; border-color:#0F131F; }
+.ns-inline-img { margin:24px 0; border-radius:16px; overflow:hidden; border:1px solid var(--border-c); }
+.ns-inline-img img { width:100%; height:420px; object-fit:cover; display:block; }
+.ns-inline-img span { display:block; background:var(--sand); padding:10px 14px; font-size:11px; letter-spacing:.06em; color:var(--muted-body); border-top:1px solid var(--border-c); }
+.ns-feature { background:#fff; padding:0; }
+.ns-feature-img { border-radius:16px; overflow:hidden; border:1px solid var(--border-c); }
+.ns-feature-img img { width:100%; height:520px; object-fit:cover; display:block; }
+.ns-content { background:#fff; padding:48px 0 64px; }
+.ns-grid { display:grid; grid-template-columns:1.7fr .7fr; gap:48px; }
+.ns-dropcap { font-size:17px; line-height:1.7; color:#0F131F; font-weight:500; }
+.ns-article p { color:var(--muted-body); font-size:15px; line-height:1.8; margin:0 0 16px; }
+.ns-article h2 { font-family:var(--font-display); font-size:26px; font-weight:800; letter-spacing:-.03em; color:#0F131F; margin:28px 0 12px; }
+.ns-article h3 { font-size:16px; font-weight:800; color:#0F131F; margin:22px 0 10px; }
+.ns-article ul { padding-left:18px; color:var(--muted-body); line-height:1.8; }
+.ns-article blockquote { border-left:3px solid var(--gold); padding:12px 18px; background:var(--sand); border-radius:0 12px 12px 0; font-family:var(--font-display); font-size:18px; font-weight:700; color:#0F131F; margin:24px 0; }
+.ns-tags { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:24px; padding-top:18px; border-top:1px solid var(--border-c); font-size:11px; letter-spacing:.08em; text-transform:uppercase; font-weight:700; color:var(--muted-body); }
+.ns-tags a { background:var(--sand); border:1px solid var(--border-c); padding:6px 10px; border-radius:999px; color:#0F131F; text-decoration:none; }
+.ns-nav { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-top:32px; flex-wrap:wrap; }
+.ns-back { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0F131F; text-decoration:none; }
+.ns-sidebar { display:flex; flex-direction:column; gap:16px; position:sticky; top:84px; align-self:start; }
+.ns-card { background:var(--sand); border:1px solid var(--border-c); border-radius:16px; padding:18px; }
+.ns-card strong { display:block; font-size:13px; font-weight:800; color:#0F131F; margin-bottom:8px; }
+.ns-card p { margin:0 0 10px; font-size:13px; line-height:1.6; color:var(--muted-body); }
+.ns-card a { font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#0F131F; text-decoration:none; }
+.ns-rel { display:flex; gap:12px; align-items:center; padding:10px 0; border-top:1px solid var(--border-c); text-decoration:none; }
+.ns-rel:first-of-type { border-top:none; }
+.ns-rel img { width:64px; height:48px; border-radius:8px; object-fit:cover; flex:0 0 64px; }
+.ns-rel small { display:block; font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted-body); font-weight:600; }
+.ns-rel em { display:block; font-style:normal; font-size:12.5px; font-weight:700; color:#0F131F; line-height:1.3; }
+@media (max-width:991px){ .ns-grid{ grid-template-columns:1fr; } .ns-feature-img img{ height:380px; } .ns-sidebar{ position:static; } }
+.newsroom-empty.show { display:block; }
+.newsroom-empty i { width:44px; height:44px; border-radius:50%; display:grid; place-items:center; margin:0 auto 12px; background:#fff; border:1px solid var(--border-c); color:var(--gold); }
+@media (max-width:991px){ .nr-featured{ height:420px; } .nr-grid{ grid-template-columns:1fr; } }
+@media (max-width:575px){ .nr-featured{ height:380px; } .nr-featured-content{ left:18px; right:18px; bottom:18px; } .nr-card{ flex-direction:column; padding:12px; } .nr-card-img{ flex:none; } .nr-card-img img{ height:200px; } }
+.investors-premium .vm-split-text h2 { font-size:clamp(32px,4vw,46px); letter-spacing:-.05em; }
+.investors-premium .vm-intro-premium { background:var(--sand); padding:64px 0 48px; text-align:center; }
+.investors-premium .vm-intro-premium h2 { font-family:var(--font-display); font-size:clamp(30px,4vw,44px); font-weight:800; letter-spacing:-.04em; color:#0F131F; }
+.investors-premium .vm-intro-premium h2 span { color:var(--gold); font-style:italic; }
+@media (max-width:991px){ .inv-metrics-grid, .inv-markets-grid{ grid-template-columns:repeat(2,1fr); } .investors-premium .vm-split{ padding:64px 0; } }
+@media (max-width:575px){ .inv-metrics-grid, .inv-markets-grid{ grid-template-columns:1fr; } }
+@media (max-width:991px){ .vm-split-grid, .vm-split--alt .vm-split-grid{ grid-template-columns:1fr; } .vm-split-media img{ height:340px; } .vm-values-grid, .vm-principles-grid{ grid-template-columns:repeat(2,1fr); } .vm-mission-cards{ grid-template-columns:repeat(2,1fr); } .vm-subnav{top:56px;} }
+@media (max-width:575px){ .vm-values-grid, .vm-principles-grid{ grid-template-columns:1fr; } .vm-hero-stats{ gap:14px; } .vm-media-cap{ flex-direction:column; align-items:flex-start; } }
